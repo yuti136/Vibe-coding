@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>✨ My Interactive Web Page ✨</h1>
+    <button id="themeToggle">Toggle Light/Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Interactive Section 1: Counter -->
+    <section>
+      <h2>🎮 Counter Game</h2>
+      <p>Click the button to increase the counter:</p>
+      <p id="counter">0</p>
+      <button id="increaseBtn">Increase</button>
+      <button id="resetBtn">Reset</button>
+    </section>
+
+    <!-- Interactive Section 2: FAQ -->
+    <section>
+      <h2>❓ FAQ</h2>
+      <div class="faq">
+        <button class="faq-toggle">What is this project about?</button>
+        <p class="faq-answer">It’s about making web pages interactive with JavaScript.</p>
+      </div>
+      <div class="faq">
+        <button class="faq-toggle">How do I use it?</button>
+        <p class="faq-answer">Click buttons, play with the counter, and test the form!</p>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>📋 Registration Form</h2>
+      <form id="registerForm">
+        <label>Name: <input type="text" id="name"></label>
+        <span class="error" id="nameError"></span><br>
+
+        <label>Email: <input type="text" id="email"></label>
+        <span class="error" id="emailError"></span><br>
+
+        <label>Password: <input type="password" id="password"></label>
+        <span class="error" id="passwordError"></span><br>
+
+        <button type="submit">Register</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
